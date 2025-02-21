@@ -1,7 +1,7 @@
-id: smart.who.int.ig-empty
-canonical: http://smart.who.int/ig-empty
-name: IGEmpty
-title: Empty IG
+id: smart.who.int.ips-pilgrimage-test
+canonical: http://smart.who.int/ips-pilgrimage-test
+name: IPSPilgrimage_Testing
+title: "IPS Pilgrimage - Testing"
 description: An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides
 status: draft # draft | active | retired | unknown
 experimental: false
@@ -45,6 +45,19 @@ dependencies:
 meta:
   profile:
     - http://smart.who.int/base/StructureDefinition/SGImplementationGuide
+
+
+parameters:
+  path-pages:
+    - input/test/features
+  path-binary:
+    - input/test/features
+  path-test:
+    - input/test/testplans
+    - input/test/features
+    
+
+
 
 pages:
   index.md:
