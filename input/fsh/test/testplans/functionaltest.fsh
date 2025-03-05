@@ -106,7 +106,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for successful and failed consent recording"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BRecordConsent)
+      * sourceReference = Reference(record-consent)
 
 * testCase[+]
 //  * key = "BIssueVHL"
@@ -117,7 +117,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for generating QR code with VHL"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BIssueVHL)
+      * sourceReference = Reference(issue-vhl)
 
 * testCase[+]
 //  * key = "BVerifyQR"
@@ -128,7 +128,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for verifying QR code signature"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BVerifyQR)
+      * sourceReference = Reference(verify-qr)
 
 * testCase[+]
 //  * key = "BRetrieveVHLManifest"
@@ -139,7 +139,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for VHL manifest retrieval"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BRetrieveVHLManifest)
+      * sourceReference = Reference(retrieve-vhl-manifest)
 
 * testCase[+]
 //  * key = "BRetrieveIPS"
@@ -150,7 +150,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for IPS retrieval"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BRetrieveIPS)
+      * sourceReference = Reference(retrieve-ips)
 
 * testCase[+]
 //  * key = "BValidateIPS"
@@ -162,7 +162,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for IPS content validation"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BValidateIPS)
+      * sourceReference = Reference(validate-ips)
 
 * testCase[+]
 //  * key = "BDisplayIPS"
@@ -174,7 +174,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test case for rendering IPS narrative"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(BDisplayIPS)
+      * sourceReference = Reference(display-ips)
 
 // * testData[+]
 //   * type = #synthea
@@ -187,5 +187,5 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
 //       * system = "http://hl7.org/fhir/test-assertion-type"
 //       * code = #required
 //       * display = "Required"
-//   * object = Reference(BRecordConsent)
+//   * object = Reference(record-consent)
 //   * result = Reference(ConsentVerification)
