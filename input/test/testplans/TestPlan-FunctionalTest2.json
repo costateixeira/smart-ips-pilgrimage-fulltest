@@ -69,7 +69,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BRecordConsent"
+                "reference": "Binary/record-consent"
               }
             }
           }
@@ -94,7 +94,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BIssueVHL"
+                "reference": "Binary/issue-vhl"
               }
             }
           }
@@ -119,7 +119,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BVerifyQR"
+                "reference": "Binary/verify-qr"
               }
             }
           }
@@ -144,7 +144,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BRetrieveVHLManifest"
+                "reference": "Binary/retrieve-vhl-manifest"
               }
             }
           }
@@ -169,7 +169,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BRetrieveIPS"
+                "reference": "Binary/retrieve-ips"
               }
             }
           }
@@ -194,7 +194,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BValidateIPS"
+                "reference": "Binary/validate-ips"
               }
             }
           }
@@ -219,7 +219,7 @@
                 ]
               },
               "sourceReference": {
-                "reference": "Binary/BDisplayIPS"
+                "reference": "Binary/display-ips"
               }
             }
           }
