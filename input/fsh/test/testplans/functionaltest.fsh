@@ -1,4 +1,4 @@
-Instance: BDisplayIPS
+Instance: display-ips
 InstanceOf: Binary
 Title: "Display IPS"
 Description: "Gherkin file - display IPS."
@@ -7,7 +7,7 @@ Usage: #inline
 * data = "ig-loader-display-ips.feature"
 
 
-Instance: BIssueVHL
+Instance: issue-vhl
 InstanceOf: Binary
 Title: "Issue VHL"
 Description: "Gherkin file - issue VHL."
@@ -15,7 +15,7 @@ Usage: #inline
 * contentType = #text/x-gherkin
 * data = "ig-loader-issue-vhl.feature"
 
-Instance: BRecordConsent
+Instance: record-consent
 InstanceOf: Binary
 Title: "Record Consent"
 Description: "Gherkin file - record consent."
@@ -23,7 +23,7 @@ Usage: #inline
 * contentType = #text/x-gherkin
 * data = "ig-loader-record-consent.feature"
 
-Instance: BRetrieveIPS
+Instance: retrieve-ips
 InstanceOf: Binary
 Title: "Retrieve IPS"
 Description: "Gherkin file - retrieve IPS."
@@ -31,7 +31,7 @@ Usage: #inline
 * contentType = #text/x-gherkin
 * data = "ig-loader-retrieve-ips.feature"
 
-Instance: BRetrieveVHLManifest
+Instance: retrieve-vhl-manifest
 InstanceOf: Binary
 Title: "Retrieve VHL Manifest"
 Description: "Gherkin file - retrieve VHL manifest."
@@ -39,7 +39,7 @@ Usage: #inline
 * contentType = #text/x-gherkin
 * data = "ig-loader-retrieve-vhl-manifest.feature"
 
-Instance: BValidateIPS
+Instance: validate-ips
 InstanceOf: Binary
 Title: "Validate IPS"
 Description: "Gherkin file - validate IPS."
@@ -48,7 +48,7 @@ Usage: #inline
 * data = "ig-loader-validate-ips.feature"
 
 
-Instance: BVerifyQR
+Instance: verify-qr
 InstanceOf: Binary
 Title: "Verify QR"
 Description: "Gherkin file - verify QR."
