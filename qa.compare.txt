@@ -1,0 +1,91 @@
+IPSPilgrimage_Testing : Validation Results
+=========================================
+
+err = 15, warn = 25, info = 19
+$--
+Generated $--. FHIR version $-- for smart.who.int.ips-pilgrimage-test#$-- (canonical = http://smart.who.int/ips-pilgrimage-test)
+ Build Errors : 5 / 7 / 0
+ /github/workspace/fsh-generated/resources/Binary-verify-qr : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-MyIPS : 1 / 4 / 26
+ /github/workspace/fsh-generated/resources/DocumentReference-FHIRIPSDocumentReference : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-FHIRIPSSignedDocumentReference : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-IPSPDFDocumentReference : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-IPSSignedPDFDocumentReference : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage-test : 0 / 0 / 10
+ /github/workspace/fsh-generated/resources/List-PilgrimFolder : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/TestPlan-FunctionalTest : 14 / 8 / 3
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/FHIRIPSDocumentReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/FHIRIPSSignedDocumentReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/IPSPDFDocumentReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/IPSSignedPDFDocumentReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MyIPS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource List/PilgrimFolder.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/TestPlan-FunctionalTest.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 365, column 239: The link 'Binary/record-consent' for "Binary/record-consent" cannot be resolved
+ERROR: /github/workspace/output/TestPlan-FunctionalTest.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 365, column 540: The link 'Binary/issue-vhl' for "Binary/issue-vhl" cannot be resolved
+ERROR: /github/workspace/output/TestPlan-FunctionalTest.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 365, column 1165: The link 'Binary/retrieve-vhl-manifest' for "Binary/retrieve-vhl-manifest" cannot be resolved
+ERROR: /github/workspace/output/TestPlan-FunctionalTest.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 365, column 1755: The link 'Binary/validate-ips' for "Binary/validate-ips" cannot be resolved
+ERROR: /github/workspace/output/TestPlan-FunctionalTest.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 365, column 2051: The link 'Binary/display-ips' for "Binary/display-ips" cannot be resolved
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/Binary-verify-qr.json ==
+== fsh-generated/resources/Bundle-MyIPS.json ==
+INFORMATION: Bundle/MyIPS: Bundle.entry[4].resource/*Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80*/.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6751-7)
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource/*MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6*/.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+INFORMATION: Bundle/MyIPS: Bundle.entry[9].resource/*AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132*/.code.coding[0].code: The code '373270004' is valid but is not active
+INFORMATION: Bundle/MyIPS: Bundle.entry[10].resource/*Condition/c4597aa2-688a-401b-a658-70acc6de28c6*/.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6750-9)
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.source.ofType(Reference): Unable to resolve resource with reference 'DocumentReference/ex-documentreference'
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.meta.profile[0]: Profile reference 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Bundle/MyIPS: Bundle: Can't find 'DocumentReference/ex-documentreference' in the bundle (Bundle.entry[19].resource.source[x])
+WARNING: Bundle/MyIPS: Bundle.meta.profile[0]: Profile reference 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/DocumentReference-FHIRIPSDocumentReference.json ==
+INFORMATION: DocumentReference/FHIRIPSDocumentReference: DocumentReference.content[0].format: The Coding provided (urn:ietf:rfc:3986#http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set.  (error message = The provided code 'urn:ietf:rfc:3986#http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips' was not found in the value set 'http://hl7.org/fhir/ValueSet/formatcodes|4.0.1')
+WARNING: DocumentReference/FHIRIPSDocumentReference: DocumentReference.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/DocumentReference-FHIRIPSSignedDocumentReference.json ==
+INFORMATION: DocumentReference/FHIRIPSSignedDocumentReference: DocumentReference.content[0].format: The code provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:dsg:detached:2014) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
+WARNING: DocumentReference/FHIRIPSSignedDocumentReference: DocumentReference.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/DocumentReference-IPSPDFDocumentReference.json ==
+INFORMATION: DocumentReference/IPSPDFDocumentReference: DocumentReference.content[0].format: The code provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:xds:2017:mimeTypeSufficient) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
+WARNING: DocumentReference/IPSPDFDocumentReference: DocumentReference.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/DocumentReference-IPSSignedPDFDocumentReference.json ==
+INFORMATION: DocumentReference/IPSSignedPDFDocumentReference: DocumentReference.content[0].format: The code provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:dsg:detached:2014) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
+WARNING: DocumentReference/IPSSignedPDFDocumentReference: DocumentReference.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage-test.json ==
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[0]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[1]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[2]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[3]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[4]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[5]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[6]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage-test: ImplementationGuide.definition.resource[7]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/List-PilgrimFolder.json ==
+WARNING: List/PilgrimFolder: List.code.coding[0]: A definition for CodeSystem 'https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes' could not be found, so the code cannot be validated
+WARNING: List/PilgrimFolder: List.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/TestPlan-FunctionalTest.json ==
+INFORMATION: TestPlan/FunctionalTest: TestPlan.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+WARNING: TestPlan/FunctionalTest: TestPlan.category[0].coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes' could not be found, so the code cannot be validated
+ERROR: TestPlan/FunctionalTest: TestPlan.category[0].coding[0].system: URL value 'http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes' does not resolve
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[0].scope[0]: Unable to resolve resource with reference 'ConsentRegistry'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[0].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[0].testRun[0].script.source.ofType(Reference): Unable to resolve resource with reference 'Binary/record-consent'
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[1].scope[0]: Unable to resolve resource with reference 'VHLService'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[1].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[1].testRun[0].script.source.ofType(Reference): Unable to resolve resource with reference 'Binary/issue-vhl'
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[2].scope[0]: Unable to resolve resource with reference 'VerifierService'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[2].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[3].scope[0]: Unable to resolve resource with reference 'VHLManifestService'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[3].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[3].testRun[0].script.source.ofType(Reference): Unable to resolve resource with reference 'Binary/retrieve-vhl-manifest'
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[4].scope[0]: Unable to resolve resource with reference 'IPSServer'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[4].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[4].testRun[0].script.source.ofType(Reference): Unable to resolve resource with reference 'retrieve-ips.feature'
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[5].scope[0]: Unable to resolve resource with reference 'IPSServer'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[5].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[5].testRun[0].script.source.ofType(Reference): Unable to resolve resource with reference 'Binary/validate-ips'
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[6].scope[0]: Unable to resolve resource with reference 'EMRViewer'
+WARNING: TestPlan/FunctionalTest: TestPlan.testCase[6].testRun[0].script.language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: TestPlan/FunctionalTest: TestPlan.testCase[6].testRun[0].script.source.ofType(Reference): Unable to resolve resource with reference 'Binary/display-ips'
+INFORMATION: Resource: The resource TestPlan/FunctionalTest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

@@ -1,0 +1,19 @@
+{
+  "url" : "http://smart.who.int/ips-pilgrimage-test/ImplementationGuide/smart.who.int.ips-pilgrimage-test",
+  "name" : "IPSPilgrimage_Testing",
+  "title" : "IPS Pilgrimage - Testing",
+  "description" : "An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides",
+  "status" : "draft",
+  "package-id" : "smart.who.int.ips-pilgrimage-test",
+  "ig-ver" : "0.1.0",
+  "date" : "Wed, 05 Mar, 2025 08:26:04 +0000",
+  "dateISO8601" : "2025-03-05T08:26:04+00:00",
+  "errs" : 15,
+  "warnings" : 25,
+  "hints" : 19,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2462541040
+}

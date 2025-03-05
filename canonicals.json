@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "smart.who.int.ips-pilgrimage-test",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/ips-pilgrimage-test/ImplementationGuide/smart.who.int.ips-pilgrimage-test",
+    "version" : "0.1.0",
+    "name" : "IPSPilgrimage_Testing"
+  },
+  {
+    "id" : "FunctionalTest",
+    "type" : "TestPlan",
+    "url" : "http://smart.who.int/ips-pilgrimage-test/TestPlan/FunctionalTest",
+    "version" : "0.1.0",
+    "name" : "FunctionalTestPlan"
+  }
+]
