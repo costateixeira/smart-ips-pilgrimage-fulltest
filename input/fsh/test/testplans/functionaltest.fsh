@@ -150,7 +150,7 @@ Description: "Test Plan consisting of different test cases expressed in Gherkin 
     * narrative = "Test cases for IPS retrieval"
     * script
       * language = #text/x-gherkin
-      * sourceReference = Reference(retrieve-ips)
+      * sourceReference = Reference(retrieve-ips.feature)
 
 * testCase[+]
 //  * key = "BValidateIPS"
